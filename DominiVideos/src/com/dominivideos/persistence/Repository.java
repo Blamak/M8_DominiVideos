@@ -7,6 +7,7 @@ import com.dominivideos.domain.User;
 import com.dominivideos.domain.Video;
 
 /**
+ * Clase de la capa persistence
  * 
  * Gestiona la creación de nuevos usuarios y sus videos
  * 

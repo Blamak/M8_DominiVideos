@@ -10,12 +10,11 @@ import javax.swing.JPanel;
  * ventanas en las que se pide al usuario que introduzca datos
  * 
  * Para la creación de las ventanas con campos de entrada de datos se ha
- * empleado el patrón de diseño "Builder". Se ha usado este patrón para
- * experimentar con un patrón distinto al Factory. 
+ * empleado el patrón de diseño "Builder" 
  * 
  * En la implementación del patrón Builder, esta clase abstracta actúa a modo de
  * interfaz. Las pantallas para iniciar la sesión y para crear un nuevo video
- * heredan de esta clase para construir sus respectivos paneles.
+ * heredan de esta clase para construir sus respectivos paneles
  * 
  */
 

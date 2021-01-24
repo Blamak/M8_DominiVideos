@@ -16,6 +16,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 
 /**
+ * Clase de la capa view.windows
+ * 
  * Clase para añadir tags durante la creación de un nuevo video
  * 
  * Se instancia en la clase NewVideoWindowBuilder de la capa

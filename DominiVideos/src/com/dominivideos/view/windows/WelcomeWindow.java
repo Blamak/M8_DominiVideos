@@ -9,6 +9,8 @@ import com.dominivideos.view.windows.InputWindows.WindowBuilder;
 import com.dominivideos.view.windows.InputWindows.WindowDirector;
 
 /**
+ * Clase de la capa view.windows
+ * 
  * Clase que crea la ventana de bienvenida tras logueo exitoso del usuario
  * 
  * Se instancia en la clase LoginWindowBuilder de la capa
@@ -33,7 +35,7 @@ public class WelcomeWindow {
 	 * Método que crea la ventana de bienvenida
 	 */
 	private void init() {
-
+							// answer = 0     // answer = 1
 		Object[] options = { "Ver mis videos", "Nuevo video" };
 		int answer = JOptionPane.showOptionDialog(null,
 				"Hola " + user.getName() + " " + user.getSurname() + "!" + "\n\nQué quieres hacer?\n\n\n", "",

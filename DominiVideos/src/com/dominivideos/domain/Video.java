@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Clase de la capa domain
  * 
  * El constructor crea un video con su
  * url, título y una lista de tags como atributos.

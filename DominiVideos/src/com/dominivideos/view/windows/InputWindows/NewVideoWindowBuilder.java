@@ -21,6 +21,8 @@ import com.dominivideos.view.windows.NewTagsWindow;
 import com.dominivideos.view.windows.VideosListWindow;
 
 /**
+ * Clase de la capa view.windows.InputWindows
+ * 
  * Clase para construir una ventana específica de creación de nuevo video.
  * 
  * Hereda de WindowBuilder, de la que sobreescribe los métodos de construcción

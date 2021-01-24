@@ -7,13 +7,14 @@ import com.dominivideos.domain.Video;
 import com.dominivideos.persistence.Repository;
 
 /**
+ * Clase de la capa application
  * 
  * Permite desacoplar la creación de nuevos objetos
  * de tipo User
  * 
  * Mediante los métodos de la clase Repository de la capa persistence, cada nuevo
- * usuario se almacena en una lista y se recupera el listado de videos de un
- * usuario en particular
+ * usuario se almacena en una lista -createUser()-, y se recupera el listado de videos de un
+ * usuario en particular -listUserVideos-
  *
  */
 

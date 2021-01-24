@@ -28,7 +28,7 @@ public class MainApp {
 		userController.createUser("John", "Bonham", "1234", "13/02/2019");
 		userController.createUser("JohnPaul", "Jones", "1234", "14/02/2019");
 
-		// Crear videos para los dos primeros usuarios:
+		// Crear videos para los dos primeros usuarios
 		usersList = repository.getUsers();
 		videoController.createVideos(usersList.get(0), "https://www.youtube.com/watch?v=xbhCPt6PZIU", "Starway",
 				Arrays.asList("rock", "blues", "Zeppelin"));
@@ -40,7 +40,7 @@ public class MainApp {
 				Arrays.asList("Bonham", "Starway", "Zeppelin")); 
 		
 		
-		// Usando el patrón Builder construir la pantalla de inicio de sesión:
+		// Usando el patrón Builder construir la pantalla de inicio de sesión
 		WindowDirector director = new WindowDirector();
 		WindowBuilder builder = new LoginWindowBuilder(usersList); 
 		@SuppressWarnings("unused")

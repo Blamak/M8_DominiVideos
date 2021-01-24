@@ -12,6 +12,8 @@ import com.dominivideos.domain.User;
 import com.dominivideos.domain.Video;
 
 /**
+ * Clase de la capa view.windows
+ * 
  * Clase para mostrar una lista de los videos del usuario logueado 
  * Crea una tabla con la información de cada video
  * 
@@ -29,7 +31,7 @@ public class VideosListWindow {
 	/**
 	 * Constructor que identifica al usuario y recupera una lista con sus videos
 	 * 
-	 * Ejecuta el método init() que crea la tabla
+	 * Ejecuta el método init(), que crea la tabla
 	 * 
 	 * @param user, usuario logueado
 	 */
@@ -56,18 +58,18 @@ public class VideosListWindow {
 		}
 
 		JTable table = new JTable(rows, columns);
-
+		// "Volver": videoListPane = 0 , "Finalizar": videoListPane = 1
 		Object[] options = { "Volver", "Finalizar" };
 		int videoListPane = JOptionPane.showOptionDialog(null, new JScrollPane(table), "", JOptionPane.YES_NO_OPTION,
 				JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
 
 		if (videoListPane == 0) {
-			// Abrir la ventana de bienvenida si se pulsa "Volver"
 			@SuppressWarnings("unused")
-			WelcomeWindow welcome = new WelcomeWindow(user);
+			// Abrir la ventana de bienvenida si se pulsa "Volver"
+			WelcomeWindow welcome = new WelcomeWindow(user); 
 		} else if (videoListPane == 1) {
 			// Cerrar el programa si se pulsa " Finalizar"
-			System.exit(0);
+			System.exit(0); 
 		}
 	}
 }

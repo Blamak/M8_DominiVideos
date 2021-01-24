@@ -5,6 +5,8 @@ import java.util.List;
 import com.dominivideos.domain.User;
 
 /**
+ * Clase de la capa view
+ * 
  * Clase para comprobar que el usuario ha intoducido los datos correctos
  * -nombre y contraseña- para loguearse.
  * 

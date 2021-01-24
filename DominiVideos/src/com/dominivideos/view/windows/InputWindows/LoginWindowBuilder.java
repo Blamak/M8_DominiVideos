@@ -21,6 +21,8 @@ import com.dominivideos.view.windows.Login;
 import com.dominivideos.view.windows.WelcomeWindow;
 
 /**
+ * Clase de la capa view.windows.InputWindows
+ * 
  * Clase para construir una ventana específica de logueo de usuario.
  * 
  * Hereda de WindowBuilder, de la que sobreescribe los métodos de construcción
@@ -83,6 +85,7 @@ public class LoginWindowBuilder extends WindowBuilder {
 		constraints.gridy = 1;
 		constraints.gridwidth = 2;
 		panel.add(pfPassword, constraints);
+		
 		panel.setBorder(new LineBorder(Color.GRAY));
 	}
 
@@ -98,6 +101,7 @@ public class LoginWindowBuilder extends WindowBuilder {
 
 		btnLogin = new JButton("Iniciar sesión");
 		btnLogin.addActionListener(new ActionListener() {
+			@Override
 			public void actionPerformed(ActionEvent e) {
 				try {
 					String userName = tfUsername.getText().trim();
